@@ -1,4 +1,104 @@
-body {
-    background-color: blue;
-}
+    .container {
+        background-image: url("city.jpg");
+        background-repeat: no-repeat;
+        background-size: 700px;
+        border-radius: 30px;
+    }
 
+    h1 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+        padding-top: 20px;
+        color: white;
+    }
+
+    #background {
+        background: rgba(129, 88, 54, 0.30);
+        border-radius: 30px;
+        display: inline-block;
+        margin-left: 30px;
+        padding-right: 20px;
+        color: white;
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    ul#dateAndTemp li {
+        display: inline;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+    }
+
+    ul#dateAndTemp li h3 {
+        display: inline;
+    }
+
+    #description {
+        margin-left: 50px;
+    }
+
+    ul#dateAndTemp #degrees {
+        font-size: 50px;
+        padding-left: 25px;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .fa-cloud-sun {
+        font-size: 60px;
+    }
+
+    h4 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+    .row {
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        margin-left: 150px;
+    }
+
+    .fa-tint-slash {
+        font-size: 30px;
+    }
+
+    .fa-wind {
+        font-size: 30px;
+    }
+
+    #wind {
+        margin-left: 60px;
+    }
+
+    .form-control {
+        width: 150px;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+    }
+
+    .btn-secondary {
+        background: rgba(129, 88, 54, 0.60);
+        border-color: rgba(129, 88, 54, 0.30);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .btn-secondary:hover {
+        background-color: #532e1c;
+    }
+
+    p {
+        font-family: 'Nunito', sans-serif;
+        text-align: center;
+    }
+
+    a {
+        color: black;
+    }
