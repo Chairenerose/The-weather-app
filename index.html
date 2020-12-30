@@ -22,8 +22,13 @@
                 <li>25 °C</li>
             </ul>
             <div class="weatherDescription">
-                <i class="fas fa-cloud-sun"></i>
-                <h3>Sunny</h3>
+                <ul>
+                    <li><i class="fas fa-cloud-sun"></i></li>
+                    <li>
+                        <h3>Sunny</h3>
+                    </li>
+                </ul>
+
             </div>
 
             <div class="row">
@@ -36,15 +41,13 @@
                 </div>
             </div>
 
-            <form>
-
-                <div class="form-group">
-
-
-                </div>
-                <button type="search" class="btn btn-primary">Search</button>
-
-            </form>
+            <div class="form-group">
+                <form id="city-form">
+                    <label for="cityInput"></label>
+                    <input type="text" class="form-control" id="city-input" placeholder="Enter City" />
+                    <input type="submit" class="btn btn-secondary" value="Search" />
+                </form>
+            </div>
 
 
 
@@ -58,7 +61,11 @@
 
     </div>
 
-    <p>Open-source code, by Chairene Chidozie</p>
+    <p>
+        <a href="https://github.com/Chairenerose/The-weather-app">
+            Open-source code
+        </a> , by Chairene Chidozie
+    </p>
 
     <script src="src/app.js"></script>
 </body>
