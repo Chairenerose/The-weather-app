@@ -26,6 +26,7 @@
 
     li {
         list-style: none;
+        text-transform: capitalize;
     }
 
     ul#dateAndTemp li {
@@ -34,11 +35,11 @@
         font-size: 20px;
     }
 
-    ul#dateAndTemp li h3 {
+    ul#dateAndTemp li #weatherDescription {
         display: inline;
     }
 
-    #description {
+    #imageDescription {
         margin-left: 50px;
     }
 
@@ -52,7 +53,7 @@
         font-size: 60px;
     }
 
-    h4 {
+    #time {
         text-align: center;
         font-family: 'Playfair Display', serif;
         font-size: 40px;
@@ -62,21 +63,26 @@
     .row {
         font-family: 'Nunito', sans-serif;
         font-size: 20px;
-        margin-left: 150px;
+        
     }
 
     .fa-tint-slash {
         font-size: 30px;
     }
 
+    #humidityInfo {
+        display: inline;
+    }
+
+    #windInfo {
+        display: inline;
+    }
+    
     .fa-wind {
         font-size: 30px;
     }
 
-    #wind {
-        margin-left: 60px;
-    }
-
+ 
     .form-control {
         width: 150px;
         margin: 0 auto;
