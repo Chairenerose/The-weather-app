@@ -36,6 +36,10 @@ function showTemperature(response) {
 
     celsiusTemperature = response.data.main.temp
 
+    let precipitation = document.querySelector("#precipitationInfo");
+    let precipitationResult = response.data.precipitation;
+    precipitation.innerHTML = `${precipitationResult}%`;
+
 }
 
 function search(cityName) {
