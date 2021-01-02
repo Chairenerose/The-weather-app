@@ -151,8 +151,13 @@
 
    .weather-forcast h3 {
     font-size: 20px;
-    text-align: center;
    }
+
+   .weather-forcast {
+       text-align: center;
+   }
+
+
 
    .weather-forcast-temperature {
     font-family:'Times New Roman', Times, serif;
