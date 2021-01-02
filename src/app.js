@@ -19,7 +19,7 @@ function showTemperature(response) {
     console.log(response.data);
     let temperature = document.querySelector("#degrees");
     let temperatureResponse = Math.round(response.data.main.temp);
-    temperature.innerHTML = `${temperatureResponse}°C`;
+    temperature.innerHTML = `${temperatureResponse}`;
     let city = document.querySelector("h1");
     city.innerHTML = response.data.name;
     let description = document.querySelector("#weatherDescription");
@@ -33,6 +33,8 @@ function showTemperature(response) {
     let iconElement = document.querySelector("#icon");
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     console.log(response.data);
+
+    celsiusTemperature = response.data.main.temp
 
 }
 
@@ -49,11 +51,28 @@ function findCity(event) {
     search(cityInput.value);
 }
 
-search("New York");
+function showFahrenheitTemperature(event) {
+    event.preventDefault();
+    let changeToFahrenheit = document.querySelector("#degrees");
+    let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+    changeToFahrenheit.innerHTML = Math.round(fahrenheitTemperature);
+}
 
+function showCelsiusTemperature(event) {
+    event.preventDefault();
+    let changeToCelsius = document.querySelector("#degrees");
+    changeToCelsius.innerHTML = Math.round(celsiusTemperature);
+}
 
-
-
+let celsiusTemperature = null;
 
 let form = document.querySelector("#city-form");
 form.addEventListener("submit", findCity);
+
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", showFahrenheitTemperature);
+
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", showCelsiusTemperature);
+
+search("Dubai");
