@@ -77,9 +77,10 @@
 
     #time {
         text-align: center;
-        font-family: 'Playfair Display', serif;
-        font-size: 40px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 30px;
         margin-left: 50px;
+        margin-bottom: 30px;
     }
 
     a {
