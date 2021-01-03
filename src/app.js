@@ -80,8 +80,8 @@ function showForecast(response) {
                     
                         <strong>${Math.round(forecast.main.temp_max)}°</strong>  ${Math.round(forecast.main.temp_min)}°
 
-                    </div>
-        </div>
+                    </div> 
+        </div> 
     `;
 
     forecast = response.data.list[1];
