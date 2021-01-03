@@ -17,7 +17,6 @@
         text-transform: uppercase;
         padding-top: 20px;
         color: white;
-       
         font-size: 50px;
     }
 
@@ -25,15 +24,23 @@
     #background {
         background: rgba(129, 88, 54, 0.30);
         border-radius: 30px;
-       max-width: 100%;
-        margin-left: 150px;
+        margin: 0 auto;
         padding-right: 20px;
         color: white;
+        width: 50%;
 
     }
 
-    #forecast {
-        color: white;
+    .col-2 {
+    background: rgba(129, 88, 54, 0.30);
+    border-radius: 30px;
+    max-width: 100%;
+    min-width: 40px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    color: white;
+    text-align: center;
     }
 
     
@@ -109,6 +116,10 @@
         display: inline;
     }
 
+    h5 {
+        font-size: 30px;
+    }
+
     .fa-wind {
         font-size: 30px;
         margin-left: 20px;
@@ -118,19 +129,27 @@
         font-size: 30px;
     }
 
+    .col-6 {
+        font-size: 30px;
+    }
+
  
     .form-control {
-        width: 150px;
+        width: 30%;
         margin: 0 auto;
         display: block;
         position: relative;
     }
 
+    #city-input {
+        font-size: 25px;
+    }
     .btn-secondary {
         background: rgba(129, 88, 54, 0.60);
         border-color: rgba(129, 88, 54, 0.30);
         display: block;
         margin: 0 auto;
+        font-size: 30px;
     }
 
     .btn-secondary:hover {
@@ -140,24 +159,20 @@
     p {
         font-family: 'Nunito', sans-serif;
         text-align: center;
+        font-size: 40px;
     }
 
    .weather-forcast h3 {
-    font-size: 20px;
+    font-size: 30px;
    }
-
-   .weather-forcast {
-       text-align: center;
-       
-   }
-
-
 
    .weather-forcast-temperature {
     font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
    }
 
 .form-section {
     display: block;
     margin: 0 auto;
 }
+

@@ -61,9 +61,6 @@ function showTemperature(response) {
 
     celsiusTemperature = response.data.main.temp
 
-    let precipitation = document.querySelector("#precipitationInfo");
-    let precipitationResult = response.data.precipitation;
-    precipitation.innerHTML = `${precipitationResult}%`;
 
 }
 
@@ -198,4 +195,4 @@ fahrenheit.addEventListener("click", showFahrenheitTemperature);
 let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", showCelsiusTemperature);
 
-search("London");
+search("Accra");
