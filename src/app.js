@@ -40,7 +40,7 @@ function showTemperature(response) {
     let temperature = document.querySelector("#degrees");
     let temperatureResponse = Math.round(response.data.main.temp);
     temperature.innerHTML = `${temperatureResponse}`;
-    let city = document.querySelector("h1");
+    let city = document.querySelector(".my-city");
     city.innerHTML = response.data.name;
     let description = document.querySelector("#weatherDescription");
     description.innerHTML = response.data.weather[0].description;

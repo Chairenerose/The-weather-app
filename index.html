@@ -22,61 +22,62 @@
 
 <body>
     <div class="container">
+        <div id="boxWrap">
+            <div class="my-city">
+            </div>
+            <div id="background">
+                <ul id="dateAndTemp">
+                    <li id="degrees">
+                    </li>
+                    <li>
+                        <a id="celsius" href="#">°C</a>|<a id="fahrenheit" href=#>°F</a>
+                    </li>
+                    <li>
+                        <img src="" id="icon" class="float-left">
+                    </li>
+                    <li>
+                        <h3 id="weatherDescription"></h3>
+                    </li>
+                    </li>
+                </ul>
+                <hr>
+                <h4 id="time">22:33</h4>
+                <div class="row">
+                    <div class="col-6" id="wet">
+                        <i class="fas fa-tint-slash"></i> Humidity: <h5 id="humidityInfo"></h5>
+                    </div>
 
-        <span id=#myCity>
-            <h1>Dubai</h1>
-        </span>
-        <div id="background">
-            <ul id="dateAndTemp">
-                <li id="degrees">
-                </li>
-                <li>
-                    <a id="celsius" href="#">°C</a>|<a id="fahrenheit" href=#>°F</a>
-                </li>
-                <li>
-                    <img src="" id="icon" class="float-left">
-                </li>
-                <li>
-                    <h3 id="weatherDescription"></h3>
-                </li>
-                </li>
-            </ul>
-            <hr>
-            <h4 id="time">22:33</h4>
-            <div class="row">
-                <div class="col-6" id="wet">
-                    <i class="fas fa-tint-slash"></i> Humidity: <h5 id="humidityInfo"></h5>
+                    <div class="col-6" id="breeze">
+                        <i class="fas fa-wind"></i> Wind: <h5 id="windInfo"></h5>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="forecastBackground">
+                    <div class="row weather-forcast" id="forecast">
+
+
+                    </div>
                 </div>
 
-                <div class="col-6" id="breeze">
-                    <i class="fas fa-wind"></i> Wind: <h5 id="windInfo"></h5>
+            </div>
+
+
+
+            <div class="form-section">
+                <div class="form-group">
+                    <form id="city-form">
+                        <label for="cityInput"></label>
+                        <input type="text" class="form-control" id="city-input" placeholder="Enter City"
+                            autocomplete="off" />
+                        <br>
+                        <input type="submit" class="btn btn-secondary" value="Search" />
+
+                    </form>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="forecastBackground">
-                <div class="row weather-forcast" id="forecast">
 
-
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <div class="form-section">
-            <div class="form-group">
-                <form id="city-form">
-                    <label for="cityInput"></label>
-                    <input type="text" class="form-control" id="city-input" placeholder="Enter City"
-                        autocomplete="off" />
-                    <br>
-                    <input type="submit" class="btn btn-secondary" value="Search" />
-
-                </form>
-            </div>
-        </div>
 
 
 
