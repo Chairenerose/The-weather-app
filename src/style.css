@@ -28,6 +28,7 @@
         padding-right: 20px;
         color: white;
         width: 50%;
+        max-width: auto;
 
     }
 
@@ -35,7 +36,7 @@
     background: rgba(129, 88, 54, 0.30);
     border-radius: 30px;
     max-width: 100%;
-    min-width: 40px;
+    min-width: auto;
     margin-left: 150px;
     margin-bottom: 30px;
     padding-right: 20px;
@@ -43,7 +44,11 @@
     text-align: center;
     }
 
-    
+    .col-6 {
+        font-size: 30px;
+        text-align: center;
+        margin: 10px;
+    }
     
 
     li {
@@ -81,8 +86,8 @@
 
     #time {
         text-align: center;
-        font-family: 'Nunito', sans-serif;
-        font-size: 30px;
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
         margin-left: 50px;
         margin-bottom: 30px;
     }
@@ -129,9 +134,7 @@
         font-size: 30px;
     }
 
-    .col-6 {
-        font-size: 30px;
-    }
+    
 
  
     .form-control {
